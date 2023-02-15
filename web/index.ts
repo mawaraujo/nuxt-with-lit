@@ -1,12 +1,10 @@
-import Image from './dist/components/widgets/image'
-import Video from './dist/components/widgets/video'
-import { Widget } from './typings'
+import './dist/components/widgets/image'
+import './dist/components/widgets/video'
+import './dist/components/html/header'
+
+import { Widget, Header } from './typings'
 
 export {
-  Widget
-}
-
-export default {
-  Image,
-  Video,
+  Widget,
+  Header
 }

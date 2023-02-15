@@ -16,3 +16,7 @@ export namespace Widget {
     alt?: string
   }
 }
+
+export interface Header {
+  title: string
+}

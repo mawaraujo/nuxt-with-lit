@@ -13,7 +13,7 @@
     <input
       type="text"
       placeholder="Change video url"
-      @input="(event) => handleChangeUrl(event.target.value, data.url)">
+      @input="handleChangeUrl">
 
     <video-widget-component
       ref="videoWidgetRef"
@@ -37,7 +37,11 @@ const data = ref<Widget.VideoWidget>({
   alt: 'Custom video'
 });
 
-const handleChangeUrl = (newUrl: string) => data.value.url = newUrl
+const handleChangeUrl = (t: Event): void => {
+  const value: string = (t.target as HTMLInputElement).value;
+  data.value.url = value
+}
+
 const handlePaused = (): void => console.log('Paused')
 const handlePlay = (): void => console.log('Resume')
 
