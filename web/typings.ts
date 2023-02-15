@@ -9,4 +9,9 @@ export namespace Widget {
     type: keyof typeof Types,
     url: string,
   }
+
+  export interface VideoWidget extends Widget {
+    onPaused?: () => void,
+    onPlay?: () => void
+  }
 }
