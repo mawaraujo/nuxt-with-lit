@@ -1,6 +1,9 @@
 <!--
   Lit size
   https://bundlephobia.com/package/lit@2.6.1
+
+  Public test videos
+  https://gist.github.com/jsturgis/3b19447b304616f18657
  -->
  
  <template>
@@ -9,12 +12,12 @@
 
     <input
       type="text"
-      placeholder="Change the item name"
-      @input="(event) => handleChangeName(event.target.value, data.url)">
+      placeholder="Change video url"
+      @input="(event) => handleChangeUrl(event.target.value, data.url)">
 
     <video-widget-component
       ref="videoWidgetRef"
-      alt="Video alt"
+      :alt="data.alt"
       width=""
       height="300"
       :url="data.url" />
@@ -31,9 +34,10 @@ const data = ref<Widget.VideoWidget>({
   name: 'Big Buck Bunny Video',
   type: Widget.Types.Video,
   url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+  alt: 'Custom video'
 });
 
-const handleChangeName = (newName: string) => data.value.name = newName
+const handleChangeUrl = (newUrl: string) => data.value.url = newUrl
 const handlePaused = (): void => console.log('Paused')
 const handlePlay = (): void => console.log('Resume')
 
