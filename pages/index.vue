@@ -4,6 +4,9 @@
 
   Public test videos
   https://gist.github.com/jsturgis/3b19447b304616f18657
+
+  Lit Google docs
+  https://codelabs.developers.google.com/codelabs/lit-2-for-react-devs?hl=es-419#1
  -->
  
  <template>
