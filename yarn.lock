@@ -10068,7 +10068,7 @@ watchpack@^2.4.0:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
 
-web-components@./web/:
+web-components@./web-components:
   version "1.0.0"
   dependencies:
     lit "^2.6.1"
