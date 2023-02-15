@@ -23,11 +23,9 @@
   })
 
   const onCloseDialog = () => {
-    if(dialogRef.value) {
-      dialogRef.value?.addEventListener('onClose', () => {
-        data.value.show = false
-      })
-    }
+    dialogRef.value?.addEventListener('onClose', () => {
+      data.value.show = false
+    })
   }
 
   const openDialog = () => {

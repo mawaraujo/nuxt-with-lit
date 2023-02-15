@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": { },
   "files": [
-    "dist/**/*"
+    "index",
+    "legacy"
   ],
   "author": "",
   "license": "ISC",
