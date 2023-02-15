@@ -1,0 +1,17 @@
+{
+  "name": "web-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": { },
+  "files": [
+    "dist/**/*"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "lit": "^2.6.1"
+  }
+}

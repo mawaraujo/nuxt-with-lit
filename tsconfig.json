@@ -31,7 +31,8 @@
   "exclude": [
     "node_modules",
     ".nuxt",
-    "dist"
+    "dist",
+    "web"
   ],
   "extensions": [
     ".vue"

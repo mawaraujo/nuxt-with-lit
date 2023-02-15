@@ -30,5 +30,5 @@
 </template>
 
 <script lang="ts" setup>
-  import { widgets } from '@/core/database/widgets'
+  import { widgets } from '@/database/widgets'
 </script>
